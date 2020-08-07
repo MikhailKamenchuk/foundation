@@ -8,7 +8,7 @@
 @import 'features.scss';
 @import 'tips.scss';
 @import 'breakpoints.scss';
-
+@import 'order.scss';
 
 * {
     box-sizing: border-box;
@@ -19,9 +19,15 @@ html{
     color: #2B292D;
 }
 .page{
-    width: 1400px;
-    min-height: 100vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+
+    @include for-large-screens {
+        max-width: 1400px;
+        min-height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    };
+    
 }

@@ -1,13 +1,51 @@
-.customers{
-    width: 1140px;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 106px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@import "breakpoints.scss";
 
-    &__icon{
+.customers {
+    width: 100%;
+    margin-bottom: 8px;
+    @include for-large-screens {
+        width: 1140px;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 106px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        border-bottom: 1px solid #e3e3e3;
+        height: 94px;
+        @include for-large-screens {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            border:none;
+            height: 94px;
+        }
+    }
+
+    &__item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #e3e3e3;
+        height: 100%;
+
+        &:last-child {
+            border: none;
+        }
+        @include for-large-screens{
+            border: none
+        }
+    }
+
+    &__icon {
         filter: brightness(0);
+        max-width: 80%;
     }
 }
