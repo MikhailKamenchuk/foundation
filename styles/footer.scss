@@ -1,0 +1,99 @@
+.footer{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    
+    &-navigation{
+        width: 1140px;
+        margin: auto;
+        height: 330px;
+        display: flex;
+
+        & .about-company{
+            margin-top: 44px;
+
+            & .footer__descroption{
+                line-height: 26px;
+                font-size: 18px;
+                width: 360px;
+                margin-top: 26px;
+                color: rgba(43, 41, 45, 0.6)
+            }
+
+            & .downloads{
+                margin-top: 25px;
+
+                &__item{
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        & .additional-navigation{
+            margin-top: 60px;
+            margin-left: auto;
+            display: flex;
+
+            &__column:last-child{
+                margin-left: 29px;
+            }
+
+            & .nav-links{
+                width: 265px;
+
+                &__title{
+                    font-weight: bold;
+                    line-height: 28px;
+                    color: #2B2920;
+                    margin: 0;
+                    font-size: 22px;
+                }
+
+                &__list{
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: rgba(43, 41, 45, 0.6);
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 18px 0 0 0;
+
+                }
+            }
+        }
+    }
+
+    &__line{
+        border: 1px solid #2B292D;
+        width: 100%;
+        opacity: 0.1;
+        margin: 0
+    }
+
+    &-links{
+        height: 50px; 
+        width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        & .terms{
+            line-height: 50px;
+            font-size: 14px;
+    
+            &__item{
+                text-decoration: none;
+                color: rgba(43, 41, 45, 0.6);
+                margin-right: 22px;
+            }
+        }
+    
+        & .social-links{
+            margin-left: auto;
+    
+            &__item{
+                text-decoration: none;
+                margin-left: 20px;
+            }
+        }
+    }
+}

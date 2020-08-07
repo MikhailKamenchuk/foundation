@@ -1,0 +1,43 @@
+.top-section{
+    background-color: #F3C6BD;
+    padding-top: 41px;
+
+    & .header{
+        width: 1140px;
+        height: 62px;
+        margin: auto;
+        display: flex;
+        color: #2B292D;
+
+        & .navigation{
+            margin-left: auto;
+            margin-right: 75px;
+            margin-top: 7px;
+            font-size: 18px;
+            line-height: 25px;
+
+            &__item{
+                text-decoration: none;
+                margin-right: 50px;
+                cursor: pointer;
+            }
+
+            &__item_selected{
+                font-weight: 700;
+            }
+
+            &__item:last-child{
+                margin-right: 0;  
+            }
+
+            &__item .arrow{
+                display: inline-block;
+                width: 8px;
+                height: 5px;
+                margin-bottom: 3px;
+                margin-left: 11px;
+                background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+            }
+        }
+    }
+}

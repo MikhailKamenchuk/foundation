@@ -1,0 +1,27 @@
+@import 'top-section.scss';
+@import 'footer.scss';
+@import 'logo.scss';
+@import 'common.scss';
+@import 'headline.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'features.scss';
+@import 'tips.scss';
+@import 'breakpoints.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Work Sans', sans-serif;
+    color: #2B292D;
+}
+.page{
+    width: 1400px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
