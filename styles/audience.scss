@@ -9,9 +9,11 @@
         padding: 0 160px 110px 160px;
     }
     &__content {
+        padding-bottom: 25px;
         @include for-large-screens {
             max-width: 555px;
             margin: auto;
+            padding-bottom: 0;
         }
     }
     &__subtitle {
@@ -81,7 +83,6 @@
         }
     }
     &__card-list {
-        
         @include for-large-screens {
             display: flex;
             margin-top:111px;
