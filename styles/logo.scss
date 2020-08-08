@@ -61,6 +61,7 @@
             @include for-large-screens {
                 font-size: 20px;
                 display: flex;
+                align-items: flex-start;
                 flex-direction: column;
                 margin-top: 0;
             }
@@ -72,7 +73,9 @@
         }
 
         &__description {
-            line-height: 25px;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgba(43, 41, 45, 0.6);
             display: block;
         }
     }

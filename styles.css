@@ -90,7 +90,7 @@
   .footer-navigation {
     width: 1140px;
     margin: auto;
-    height: 330px;
+    height: 338px;
     display: flex;
   }
 }
@@ -103,11 +103,13 @@
 }
 @media screen and (min-width: 400px) {
   .footer-navigation .about-company {
-    margin-top: 44px;
+    margin-top: 43px;
+    margin-right: 126px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border-bottom: none;
+    max-width: 360px;
   }
 }
 .footer-navigation .about-company .footer__descroption {
@@ -119,6 +121,7 @@
     line-height: 26px;
     font-size: 18px;
     width: 360px;
+    margin: 0;
     margin-top: 26px;
     color: rgba(43, 41, 45, 0.6);
   }
@@ -131,10 +134,11 @@
 }
 @media screen and (min-width: 400px) {
   .footer-navigation .about-company .downloads {
-    margin-top: 31px;
-    padding-bottom: 0;
+    margin-top: 25px;
+    padding: 0;
     flex: 1;
     justify-content: start;
+    max-height: 40px;
   }
 }
 .footer-navigation .about-company .downloads__item:first-child {
@@ -148,9 +152,8 @@
 @media screen and (min-width: 400px) {
   .footer-navigation .additional-navigation {
     margin-top: 60px;
-    margin-left: auto;
     display: flex;
-    padding: none;
+    padding: 0;
   }
 }
 .footer-navigation .additional-navigation__column:last-child {
@@ -192,7 +195,7 @@
 @media screen and (min-width: 400px) {
   .footer__line {
     display: block;
-    border: 1px solid #2b292d;
+    border: 0.5px solid #2b292d;
     width: 100%;
     opacity: 0.1;
     margin: 0;
@@ -211,6 +214,7 @@
     width: 1140px;
     margin: 0 auto;
     display: flex;
+    line-height: 50px;
     flex-direction: row;
     align-items: center;
     padding-bottom: 0;
@@ -317,6 +321,7 @@
   .footer .logo__text {
     font-size: 20px;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     margin-top: 0;
   }
@@ -326,7 +331,9 @@
   font-weight: 700;
 }
 .footer .logo__description {
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
   display: block;
 }
 
