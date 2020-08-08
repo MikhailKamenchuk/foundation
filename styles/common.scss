@@ -26,8 +26,16 @@
         width: 100%;
         @include for-large-screens{
             width: 160px;
+        }
+    }
+
+    &.audience-button{
+        width: 100%;
+        @include for-large-screens{
+            width: 160px;
         };
     }
+    
     &.order__button{
         width: 100%;
         @include for-large-screens{

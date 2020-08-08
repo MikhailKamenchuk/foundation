@@ -1,0 +1,130 @@
+@import "breakpoints.scss";
+
+.audience {
+    background: #00a1c612;
+    mix-blend-mode: normal;
+    padding: 50px 15px;
+    width: 100%;
+    @include for-large-screens {
+        padding: 0;
+        padding-bottom: 110px;;
+        max-width: 1140px;
+        margin: auto;
+    }
+    &__content {
+        @include for-large-screens {
+            max-width: 555px;
+            margin: auto;
+        }
+    }
+    &__subtitle {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+        margin: 0;
+        @include for-large-screens {
+            margin-top: 108px;
+        }
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.357143px;
+        margin: 0;
+        margin-top: 17px;
+
+        @include for-large-screens {
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -0.5px;
+            margin-top: 17px;
+        }
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        margin: 0;
+        margin-top: 18px;
+        @include for-large-screens {
+            margin-top: 18px;
+
+        }
+    }
+    &__actions {
+        margin-top: 30px;
+        @include for-large-screens {
+            margin-top: 34px;
+            text-align: center;
+        }
+
+        &__learn-more-btn {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%), #ffffff;
+            background-blend-mode: overlay, normal;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+                inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            border: 0;
+            outline: 0;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 13px;
+            width: 100%;
+            height: 48px;
+            color: #3040c4;
+            cursor: pointer;
+            margin-top: 15px;
+            @include for-large-screens {
+                margin-top: 0;
+                max-width: 160px
+            }
+        }
+    }
+    &__card-list {
+        
+        @include for-large-screens {
+            display: flex;
+            margin-top:111px;
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        min-height: 290px;
+        margin-top: 40px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%), #ffffff;
+        background-blend-mode: overlay, normal;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+
+        @include for-large-screens{
+            margin-right: 30px;
+            margin-top: 0;
+            flex:1;
+        }
+        &:last-child{
+            margin-right: 0;
+            @include for-large-screens{
+                margin-right: 0;
+            }
+        }
+
+        &__image {
+            margin-top: 22px;
+        }
+        &__capture {
+            margin-top: 22px;
+
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+}
