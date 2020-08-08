@@ -14,10 +14,11 @@
 
     &__content {
         width: 100%;
-        padding: 35px 15px 0 15px;
+        padding: 0 15px;
 
         @include for-large-screens {
             z-index: 1;
+            padding:0;
         }
     }
     &__title {
