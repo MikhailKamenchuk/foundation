@@ -125,15 +125,19 @@
 }
 .footer-navigation .about-company .downloads {
   margin-top: 25px;
-  padding-bottom: 40px;
+  padding: 0 29px 40px 30px;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 400px) {
   .footer-navigation .about-company .downloads {
     margin-top: 31px;
     padding-bottom: 0;
+    flex: 1;
+    justify-content: start;
   }
 }
-.footer-navigation .about-company .downloads__item {
+.footer-navigation .about-company .downloads__item:first-child {
   margin-right: 10px;
 }
 .footer-navigation .additional-navigation {
@@ -928,7 +932,7 @@
   text-align: center;
   letter-spacing: -0.357143px;
   margin: 0;
-  margin-top: 17px;
+  margin-top: 24px;
 }
 @media screen and (min-width: 400px) {
   .audience__title {
@@ -943,7 +947,7 @@
   line-height: 34px;
   text-align: center;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 400px) {
   .audience__text {

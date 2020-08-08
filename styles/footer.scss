@@ -41,15 +41,20 @@
 
             & .downloads {
                 margin-top: 25px;
-                padding-bottom: 40px;
+                padding: 0 29px 40px 30px;
+                display: flex;
+                align-items: center;
 
                 @include for-large-screens {
                     margin-top: 31px;
                     padding-bottom: 0;
+                    flex:1;
+                    justify-content: start;
                 }
 
-                &__item {
+                &__item:first-child {
                     margin-right: 10px;
+                    
                 }
             }
         }
