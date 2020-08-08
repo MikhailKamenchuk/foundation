@@ -896,10 +896,7 @@
 }
 @media screen and (min-width: 400px) {
   .audience {
-    padding: 0;
-    padding-bottom: 110px;
-    max-width: 1140px;
-    margin: auto;
+    padding: 0 160px 110px 160px;
   }
 }
 @media screen and (min-width: 400px) {

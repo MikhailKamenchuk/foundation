@@ -6,10 +6,7 @@
     padding: 50px 15px;
     width: 100%;
     @include for-large-screens {
-        padding: 0;
-        padding-bottom: 110px;;
-        max-width: 1140px;
-        margin: auto;
+        padding: 0 160px 110px 160px;
     }
     &__content {
         @include for-large-screens {
